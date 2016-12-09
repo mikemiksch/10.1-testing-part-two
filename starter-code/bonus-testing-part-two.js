@@ -1,4 +1,4 @@
-var assert = require('./vendor/assert');
+const assert = require('./vendor/assert');
 
 /* Welcome back to our testing exercise! This practice module
     will allow you to become even more familiar with testing
@@ -34,19 +34,22 @@ function testIsNumber() {
 }
 
   /* TODO:
-     Write at least one more test function that calls assert to test
+     Write (AT LEAST) ONE more function that calls assert to test
      whether tooHungryDay falls within an acceptable answer
-     based on the number of days available in the array. */
+     based on the number of days available in the array. If you
+     can think of other things to test for, repeat the process for
+     additional points, so long as you write code that passes those
+     tests.
+     NOTE: All test functions must begin with the word 'test' */
 
-  // Bonus! Can you think of other things to test for?
-  // Repeat the process for additonal points!
 
+  /* Complete this TODO ONLY when done writing tests AND
+  commiting your work:
 
-  /* TODO:
    Cycle through the days in mealsPerDay. Log the cumulative average
    meals/day the lion ate since the new caretaker started.
    tooHungryDay should be equal to the day the lion started
-   pondering protein supplements (the first day the average dips below 4
+   pondering protein supplements (the first day the AVERAGE dips below 4
    meals) Remember: humans count days starting at 1!
 
    When ready, execute this program in your terminal with node
