@@ -50,6 +50,19 @@ function testTooHungryIsValid() {
      tests.
      NOTE: All test functions must begin with the word 'test' */
 
+getAverageMealsPerDay = function() {
+  totalMeals = 0;
+  averageMeals = 0;
+  tooHungryDay = 0;
+  for (var i = 0; i < mealsPerDay.length; i++){
+    totalMeals = totalMeals += mealsPerDay[i];
+    tooHungryDay ++;
+    averageMeals = totalMeals / tooHungryDay;
+  if (averageMeals < 4) {
+      return console.log('The lion went hungry after ' + tooHungryDay + ' days.')
+    }
+  }
+};
 
   /* Complete this TODO ONLY when done writing tests AND
   commiting your work:
@@ -66,5 +79,8 @@ function testTooHungryIsValid() {
 
 
 
+testIsNumber();
+testTooHungryIsValid();
+getAverageMealsPerDay();
 testIsNumber();
 testTooHungryIsValid();
