@@ -24,6 +24,7 @@ const assert = require('./vendor/assert');
 
 var mealsPerDay = [5, 4, 3, 6, 2, 4, 3, 4, 5, 1];
 var tooHungryDay;
+var averageMeals;
 
 function testIsNumber() {
   assert(
@@ -33,6 +34,13 @@ function testIsNumber() {
   );
 }
 
+function testTooHungryIsValid() {
+  assert(
+    tooHungryDay >=1 && tooHungryDay <= 10,
+    'tooHungry Day occurred between 1 and 10 days',
+    'tooHungryDay did not occur between 1 and 10 days and falls outside our array length'
+  );
+}
   /* TODO:
      Write (AT LEAST) ONE more function that calls assert to test
      whether tooHungryDay falls within an acceptable answer
@@ -59,3 +67,4 @@ function testIsNumber() {
 
 
 testIsNumber();
+testTooHungryIsValid();
